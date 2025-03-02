@@ -4,6 +4,8 @@
 
 This project implements a solution to the IronSoft Old Phone Pad coding challenge. The challenge involves converting a string of numbers and symbols into text, simulating the input from an old phone keypad. A pause is required to type two characters from the same button after each other. The "#" symbol indicates the end of the input.
 
+**For details read the C# Coding Challenge.pdf file in Documents directory.**
+
 ## Solution Structure
 
 The solution consists of the following projects:
@@ -11,14 +13,6 @@ The solution consists of the following projects:
 - **IronSoft.OldPhonePad.Console:** A console application that takes input from the user and converts it to the Old Phone Pad output.
 - **IronSoft.OldPhonePad.Library:** A class library containing the core logic for converting the input string to the Old Phone Pad output. The main class is `OldPhonePad` class.
 - **IronSoft.OldPhonePad.UnitTests:** A unit test project that tests the `OldPhonePad` class.
-
-## Examples
-```
-OldPhonePad("33#") => output: E
-OldPhonePad("227*#") => output: B
-OldPhonePad("4433555 555666#") => output: HELLO
-OldPhonePad("8 88777444666*664#") => output: ??????
-```
 
 ## .NET Version
 
