@@ -45,8 +45,8 @@ class Program
                 ConsoleKeyInfo key = Console.ReadKey();
                 if (key.Key == ConsoleKey.Enter)
                 {
-                    // Exit the program
-                    return; // Use return to exit the Main method and terminate the program
+                    // Use return to exit the Main method and terminate the program
+                    return; 
                 }
 
                 string keyPressed = key.KeyChar.ToString();
