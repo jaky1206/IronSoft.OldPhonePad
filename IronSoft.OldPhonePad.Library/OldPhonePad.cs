@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace IronSoft.OldPhonePad.Library
+namespace IronSoft.OldPhonePad.Libraries
 {
     public static class OldPhonePad
     {
