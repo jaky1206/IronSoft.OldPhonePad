@@ -11,8 +11,4 @@
     <None Remove=".gitignore" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Documents\" />
-  </ItemGroup>
-
 </Project>

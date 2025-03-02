@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using IronSoft.OldPhonePad;
 
-
-// Pause 1 second in order to type two characters on the same key.
-
-namespace IronSoft.OldPhonePad
+namespace IronSoft.OldPhonePad.Console
 {
     class Program
     {
@@ -17,7 +12,7 @@ namespace IronSoft.OldPhonePad
             Console.WriteLine("Old feature phone keypad simulator.");
             Console.WriteLine("---------------------------------------------");
             Console.WriteLine("Allowed inputs: 0-9, *, #");
-            Console.WriteLine("Invalid inputs will be skipped.");
+            Console.WriteLine("Invalid inputs will be ignored.");
             Console.WriteLine("---------------------------------------------");
             Console.WriteLine("Key Mappings:");
             Console.WriteLine("1 --> & ' ( ) ");
@@ -39,7 +34,7 @@ namespace IronSoft.OldPhonePad
 
             while (true)
             {
-                List<KeyValuePair<string, int>> input = new List<KeyValuePair<string, int>>();
+                List<KeyValuePair<char, int>> input = new List<KeyValuePair<char, int>>();
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
 
@@ -52,7 +47,7 @@ namespace IronSoft.OldPhonePad
                     }
 
                     string keyPressed = key.KeyChar.ToString();
-                    if (IsValidKey(keyPressed))
+                    if (OldPhonePad.IsValidKey(keyPressed))
                     {
                         if (keyPressed == "#")
                         {
@@ -61,7 +56,12 @@ namespace IronSoft.OldPhonePad
                         }
                         else
                         {
-                            input.Add(new KeyValuePair<string, int>(keyPressed, (int)stopwatch.Elapsed.TotalSeconds));
+                            input.Add(
+                                new KeyValuePair<char, int>(
+                                    keyPressed[0],
+                                    (int)stopwatch.Elapsed.TotalSeconds
+                                )
+                            );
                             stopwatch.Restart();
                         }
                     }
@@ -72,12 +72,6 @@ namespace IronSoft.OldPhonePad
                     }
                 }
             }
-        }
-
-        private static bool IsValidKey(string key)
-        {
-            // read the list of invalid keys from the OldPhonePad class
-            return OldPhonePad.IsValidKey(key);
         }
     }
 }

@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronSoft.OldPhonePad", "IronSoft.OldPhonePad\IronSoft.OldPhonePad.csproj", "{9C13CDC7-9AB1-4754-B288-3A3E00D03D37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronSoft.OldPhonePad.Libraries", "IronSoft.OldPhonePad.Library\IronSoft.OldPhonePad.Libraries.csproj", "{808A656E-4412-4AC0-B60E-3DFC34BBA7C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		IronSoft.OldPhonePad\Documents\C# Coding Challenge.pdf = IronSoft.OldPhonePad\Documents\C# Coding Challenge.pdf
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronSoft.OldPhonePad.Console", "IronSoft.OldPhonePad.Console\IronSoft.OldPhonePad.Console.csproj", "{998F6ACB-78F3-4C11-B52A-1AB265276DB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +18,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9C13CDC7-9AB1-4754-B288-3A3E00D03D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C13CDC7-9AB1-4754-B288-3A3E00D03D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C13CDC7-9AB1-4754-B288-3A3E00D03D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C13CDC7-9AB1-4754-B288-3A3E00D03D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808A656E-4412-4AC0-B60E-3DFC34BBA7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808A656E-4412-4AC0-B60E-3DFC34BBA7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808A656E-4412-4AC0-B60E-3DFC34BBA7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808A656E-4412-4AC0-B60E-3DFC34BBA7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998F6ACB-78F3-4C11-B52A-1AB265276DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998F6ACB-78F3-4C11-B52A-1AB265276DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998F6ACB-78F3-4C11-B52A-1AB265276DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998F6ACB-78F3-4C11-B52A-1AB265276DB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
