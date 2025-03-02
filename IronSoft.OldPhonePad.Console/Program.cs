@@ -46,7 +46,7 @@ class Program
                 if (key.Key == ConsoleKey.Enter)
                 {
                     // Exit the program
-                    break;
+                    return; // Use return to exit the Main method and terminate the program
                 }
 
                 string keyPressed = key.KeyChar.ToString();
